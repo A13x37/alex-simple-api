@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pokédex</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <main class="main">
+            <header class="home">
+                <div class="container">
+                    <div class="nav">
+                        <div class="logo">
+                            <img src="logo.png">
+                        </div>
+                        <div class="search">
+                            <div class="search-bar">
+                                <input type="text" class="search-pokemon" id="search-pokemon" placeholder="search">
+                            </div>
+                        </div>
+                        <div class="sort-btn">
+                            <button id="btn">Filter</button>
+                        </div>
+                        <div class="sort">
+                            <div class="filter">
+                                <p>Sort By: </p>
+                                <div class="filter-contents">
+                                    <div>
+                                        <input type="radio" id="number" name="filters" value="number" checked>
+                                        <label for="number">ID</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="name" name="filters" value="name">
+                                        <label for="name">Name</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="list-results">
+                <div class="container">
+                    <div class="pokemon-list"></div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
